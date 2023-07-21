@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  post "/github/repositories", to: 'repository#create'
+  post '/github/repositories', to: 'repository#create'
 end
