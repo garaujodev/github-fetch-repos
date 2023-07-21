@@ -14,8 +14,8 @@ Follow the steps below to set up and run the application on your local machine:
 
 ### Prerequisites
 
-- Ruby (v3.2.2)
-- Rails (v7.0.6)
+- Ruby (`~> 3.2.2`)
+- Rails (`~> 7.0.6`)
 - Redis (for Sidekiq background processing)
 
 ### Installation
@@ -54,7 +54,9 @@ To find the public repositories of a GitHub user, make a POST request to the fol
 POST /github/repositories
 ```
 
-Include the GitHub username as a parameter in the request body. The application will enqueue a background job using Sidekiq to search for the user's public repositories on GitHub. The repository names and the number of stars will be saved in the database.
+**Include the GitHub `username` as a parameter in the request body.**
+
+The application will enqueue a background job using Sidekiq to search for the user's public repositories on GitHub. The repository names and the number of stars will be saved in the database.
 
 ## Testing
 
