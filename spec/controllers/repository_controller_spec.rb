@@ -26,4 +26,3 @@ RSpec.describe RepositoryController, type: :controller do
     end
   end
 end
-

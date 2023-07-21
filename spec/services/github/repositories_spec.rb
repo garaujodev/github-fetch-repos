@@ -46,4 +46,3 @@ RSpec.describe GitHub::Repositories do
     end
   end
 end
-
